@@ -1,0 +1,14 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP2 32-BIT'
+.TITLE 'nand_x1'
+ load             tpdf_1ns         pdf_2ns          tpdr_1ns          
+                  tpdr_2ns         ttr_1ns          ttr_2ns           
+                  ttf_1ns          ttf_2ns          temper            
+                  alter#            
+  2.000e-15          failed           failed           failed         
+                     failed           failed           failed         
+                     failed           failed          25.0000         
+                  1                 
+  1.000e-14          failed           failed           failed         
+                     failed           failed           failed         
+                     failed           failed          25.0000         
+                  1                 

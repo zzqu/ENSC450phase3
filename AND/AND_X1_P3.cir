@@ -1,0 +1,61 @@
+NAND_X1
+
+* Technology Dependent design rules/parameters
+.include /CMC/setups/ensc450/HSPICE/cmosp18/rules.inc
+* Wm#, Awd# parameters etc. all specified in the rules.inc file above
+
+* Transistor models
+.protect
+.LIB `/CMC/setups/ensc450/HSPICE/cmosp18/log018.l' SS  $ typical process corner.
+.unprotect
+
+* WORST CASE SIMULATION
+
+* Supply Sources
+.param pwr=1.2
+.temp 25
+Vvdd  VDD!  0 dc pwr
+Vgnd  GND!  0 dc 0
+
+* Logic
+.param Wn=Wm#
+.param load=2fF
+.param ds=1
+
+M5 Z NET26 GND! GND!  NCH  L=180E-9 W=1E-6 AD=+4.80000000E-13
++AS=+4.80000000E-13 PD=+2.96000000E-06 PS=+2.96000000E-06 NRD=+2.70000000E-01
++NRS=+2.70000000E-01 M=1.0
+M4 NET10 B GND! GND!  NCH  L=180E-9 W=2E-6 AD=+9.60000000E-13
++AS=+9.60000000E-13 PD=+4.96000000E-06 PS=+4.96000000E-06 NRD=+1.35000000E-01
++NRS=+1.35000000E-01 M=1.0
+M3 NET26 A NET10 GND!  NCH  L=180E-9 W=2E-6 AD=+9.60000000E-13
++AS=+9.60000000E-13 PD=+4.96000000E-06 PS=+4.96000000E-06 NRD=+1.35000000E-01
++NRS=+1.35000000E-01 M=1.0
+M2 Z NET26 VDD! VDD!  PCH  L=180E-9 W=2E-6 AD=+9.60000000E-13
++AS=+9.60000000E-13 PD=+4.96000000E-06 PS=+4.96000000E-06 NRD=+1.35000000E-01
++NRS=+1.35000000E-01 M=1.0
+M1 NET26 B VDD! VDD!  PCH  L=180E-9 W=2E-6 AD=+9.60000000E-13
++AS=+9.60000000E-13 PD=+4.96000000E-06 PS=+4.96000000E-06 NRD=+1.35000000E-01
++NRS=+1.35000000E-01 M=1.0
+M0 NET26 A VDD! VDD!  PCH  L=180E-9 W=2E-6 AD=+9.60000000E-13
++AS=+9.60000000E-13 PD=+4.96000000E-06 PS=+4.96000000E-06 NRD=+1.35000000E-01
++NRS=+1.35000000E-01 M=1.0
+
+Cload z 0 load
+
+* Input Stimuli (Step response)
+VA  a  0 PWL(0n pwr 5ns pwr 6ns pwr 11ns pwr 12ns pwr 17ns pwr 19ns pwr 23ns pwr 25ns pwr)
+VB  b  0 PWL(0n 0 5ns 0 6ns pwr 11ns pwr 12ns 0 17ns 0 19ns pwr 23ns pwr 25ns 0)
+
+* Simulation Parameters ************************
+.tran 0.01ps 30ns START=0 sweep load POI 2 2fF 10fF 
+
+.graph V(A)
+.graph V(B)
+.graph V(Z)
+.option post
+
+************************************************
+
+.end
+  

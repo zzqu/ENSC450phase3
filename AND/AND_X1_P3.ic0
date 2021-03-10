@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "20:56:07 03/04/2021 "
+* "netlist" "AND_X1_P3.cir "
+* "runtitle" "nand_x1"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.2000        
++ b =   0.            
++ net10 = 910.0728m       
++ net26 =   1.2000        
++ vdd! =   1.2000        
++ z =   2.6726n       
+***   END: Saved Operating Point ***                     

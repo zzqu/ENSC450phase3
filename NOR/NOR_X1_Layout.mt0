@@ -1,0 +1,14 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP2 32-BIT'
+.TITLE 'nor_x1 layout schematic'
+ load             tpdf_1ns         tpdf_2ns         tpdr_1ns          
+                  tpdr_2ns         ttr_1ns          ttr_2ns           
+                  ttf_1ns          ttf_2ns          temper            
+                  alter#            
+  2.000e-15        2.801e-10        4.214e-10        2.416e-10        
+                   3.272e-10        1.723e-10        2.575e-10        
+                   1.371e-10        2.211e-10        125.0000         
+                  1                 
+  1.000e-14        3.569e-10        5.373e-10        3.335e-10        
+                   4.634e-10        2.354e-10        3.352e-10        
+                   1.781e-10        2.806e-10        125.0000         
+                  1                 
