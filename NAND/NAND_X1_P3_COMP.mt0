@@ -1,0 +1,14 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP2 32-BIT'
+.TITLE 'nand_x1'
+ load             tpdf_1ns         pdf_2ns          tpdr_1ns          
+                  tpdr_2ns         ttr_1ns          ttr_2ns           
+                  ttf_1ns          ttf_2ns          temper            
+                  alter#            
+  2.000e-15        2.681e-10        3.798e-10        3.501e-10        
+                   5.179e-10        1.850e-10        2.787e-10        
+                   1.154e-10        1.903e-10        125.0000         
+                  1                 
+  1.000e-14        3.744e-10        5.380e-10        4.814e-10        
+                   7.138e-10        2.814e-10        4.139e-10        
+                   1.951e-10        2.775e-10        125.0000         
+                  1                 
