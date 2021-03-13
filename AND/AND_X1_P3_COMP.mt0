@@ -2,13 +2,13 @@ $DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP2 32-BIT'
 .TITLE 'nand_x1'
  load             tpdf_1ns         pdf_2ns          tpdr_1ns          
                   tpdr_2ns         ttr_1ns          ttr_2ns           
-                  ttf_1ns          ttf_2ns          temper            
-                  alter#            
+                  ttf_1ns          ttf_2ns          leak_pow_in1      
+                  leak_pow_in0     temper           alter#            
   2.000e-15        3.868e-10        5.248e-10        4.720e-10        
                    6.661e-10        8.806e-11        9.989e-11        
-                   7.082e-11        8.411e-11        125.0000         
-                  1                 
+                   7.082e-11        8.411e-11        2.419e-09        
+                   1.725e-09        125.0000        1                 
   1.000e-14        4.902e-10        6.318e-10        5.513e-10        
                    7.511e-10        2.151e-10        2.198e-10        
-                   1.498e-10        1.607e-10        125.0000         
-                  1                 
+                   1.498e-10        1.607e-10        2.419e-09        
+                   1.725e-09        125.0000        1                 

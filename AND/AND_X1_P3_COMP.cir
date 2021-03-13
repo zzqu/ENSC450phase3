@@ -107,5 +107,8 @@ VB  B  0 PWL(0n 0   5ns 0   6ns pwr 11ns pwr 12ns 0   17ns 0   19ns pwr 23ns pwr
 +                        targ v(Z_E) val='pwr*0.2' fall=2
 
 ************************************************
-
+* Measures Cell Leakage Power
+.meas tran leak_pow_in1  avg power FROM=8ns TO=10ns
+.meas tran leak_pow_in0  avg power FROM= 2ns TO= 4ns
+************************************************
 .end 

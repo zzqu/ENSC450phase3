@@ -1,0 +1,59 @@
+***** HSPICE -- D-2010.03-SP2 32-BIT (Aug 26 2010) linux ******
+ Input File: NOR_X1_P3_COMP.cir
+ lic:
+ lic: FLEXlm: v10.8
+ lic: USER:   escmc29              HOSTNAME: ensc-esil-18
+ lic: HOSTID:                      PID:      2993
+ lic: Using FLEXlm license file:
+ lic: 6053@142.58.21.5
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 21-aug-2021/2020.03
+ lic: 2(in_use)/500(total) FLOATING license(s) on SERVER 142.58.21.5
+ lic:
+ init: begin read circuit files,  cpu clock=  1.00E-02
+       option search   = /CMC/tools/synopsys/hspice_vD-2010.03-SP2/hspice
+       option runlvl
+       option post
+ init: end read circuit files,  cpu clock=  2.00E-02 memory=    154 kb
+ init: begin check errors,  cpu clock=  2.00E-02
+ init: end check errors,  cpu clock=  3.00E-02 memory=    315 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  3.00E-02
+       establish matrix -- done,  cpu clock=  3.00E-02 memory=    322 kb
+       re-order matrix -- done,  cpu clock=  3.00E-02 memory=    324 kb
+ init: end setup matrix,  cpu clock=  3.00E-02 memory=    342 kb
+ sweep: parameter       parameter1       begin, #sweeps =   2
+ parameter: load            =    2.00E-15
+ dcop: begin dcop,  cpu clock=  3.00E-02
+ dcop: end dcop,  cpu clock=  3.00E-02 memory=    342 kb  tot_iter=      21
+ output: NOR_X1_P3_COMP.mt0
+ sweep: tran tran1    begin, stop_t=  2.50E-08 #sweeps=**** cpu clock=  3.00E-02
+ tran: time= 2.8124E-09 tot_iter=      16 conv_iter=       8 cpu clock= 3.00E-02
+ tran: time= 5.0110E-09 tot_iter=     137 conv_iter=      51 cpu clock= 3.00E-02
+ tran: time= 8.0000E-09 tot_iter=     145 conv_iter=      55 cpu clock= 3.00E-02
+ tran: time= 1.0224E-08 tot_iter=     262 conv_iter=      93 cpu clock= 4.00E-02
+ tran: time= 1.3000E-08 tot_iter=     274 conv_iter=      97 cpu clock= 4.00E-02
+ tran: time= 1.5000E-08 tot_iter=     368 conv_iter=     128 cpu clock= 4.00E-02
+ tran: time= 1.7527E-08 tot_iter=     393 conv_iter=     139 cpu clock= 4.00E-02
+ tran: time= 2.0147E-08 tot_iter=     419 conv_iter=     150 cpu clock= 5.00E-02
+ tran: time= 2.3000E-08 tot_iter=     527 conv_iter=     186 cpu clock= 5.00E-02
+ tran: time= 2.5000E-08 tot_iter=     537 conv_iter=     190 cpu clock= 5.00E-02
+ sweep: tran tran1    end,  cpu clock=  5.00E-02 memory=    342 kb
+ parameter: load            =    1.00E-14
+ dcop: begin dcop,  cpu clock=  5.00E-02
+ dcop: end dcop,  cpu clock=  5.00E-02 memory=    342 kb  tot_iter=      42
+ output: NOR_X1_P3_COMP.mt0
+ sweep: tran tran2    begin, stop_t=  2.50E-08 #sweeps=**** cpu clock=  5.00E-02
+ tran: time= 2.8124E-09 tot_iter=      16 conv_iter=       8 cpu clock= 5.00E-02
+ tran: time= 5.1038E-09 tot_iter=     138 conv_iter=      52 cpu clock= 6.00E-02
+ tran: time= 8.0000E-09 tot_iter=     149 conv_iter=      57 cpu clock= 6.00E-02
+ tran: time= 1.0048E-08 tot_iter=     250 conv_iter=      92 cpu clock= 6.00E-02
+ tran: time= 1.3000E-08 tot_iter=     265 conv_iter=      97 cpu clock= 7.00E-02
+ tran: time= 1.5000E-08 tot_iter=     354 conv_iter=     129 cpu clock= 7.00E-02
+ tran: time= 1.8471E-08 tot_iter=     389 conv_iter=     143 cpu clock= 7.00E-02
+ tran: time= 2.0431E-08 tot_iter=     414 conv_iter=     153 cpu clock= 7.00E-02
+ tran: time= 2.2599E-08 tot_iter=     488 conv_iter=     178 cpu clock= 7.00E-02
+ tran: time= 2.5000E-08 tot_iter=     503 conv_iter=     184 cpu clock= 8.00E-02
+ sweep: tran tran2    end,  cpu clock=  8.00E-02 memory=    343 kb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

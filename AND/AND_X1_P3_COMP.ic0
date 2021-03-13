@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "D-2010.03-SP2 32-BIT"
 * "format" "HSP"
-* "rundate" "21:00:25 03/11/2021 "
+* "rundate" "17:06:38 03/12/2021 "
 * "netlist" "AND_X1_P3_COMP.cir "
 * "runtitle" "nand_x1"
 * time =    0.            
