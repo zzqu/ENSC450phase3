@@ -1,0 +1,14 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP2 32-BIT'
+.TITLE 'nor_x1 layout and schematic circuits'
+ load             tpdf_1ns         tpdf_2ns         tpdr_1ns          
+                  tpdr_2ns         ttr_1ns          ttr_2ns           
+                  ttf_1ns          ttf_2ns          leak_pow_in1      
+                  leak_pow_in0     temper           alter#            
+  2.000e-15        2.415e-10        3.484e-10        2.691e-10        
+                   3.828e-10        1.904e-10        3.076e-10        
+                   1.496e-10        2.499e-10        1.864e-10        
+                   1.528e-09        125.0000        1                 
+  1.000e-14        3.679e-10        5.256e-10        4.264e-10        
+                   6.369e-10        2.823e-10        4.228e-10        
+                   2.329e-10        3.906e-10        1.864e-10        
+                   1.528e-09        125.0000        1                 
